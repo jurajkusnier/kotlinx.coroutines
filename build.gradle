@@ -43,10 +43,10 @@ buildscript {
     }
 
     repositories {
+        mavenLocal()
         mavenCentral()
         maven { url "https://plugins.gradle.org/m2/" }
         CommunityProjectsBuild.addDevRepositoryIfEnabled(delegate, project)
-        mavenLocal()
     }
 
     dependencies {
